@@ -204,15 +204,25 @@
   margin-top: 20px;
 }
 
-/* .searchingProgressForm {
-  font-size: 1.5rem;
-  font-weight: bolder; 
-  color: black;
-  text-align: center;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 20px;
-} */
+.sub-heading2{
+  @apply font-medium text-[20px] text-white max-w-2xl text-center break-words;
+}
+
+.section_container{
+  @apply px-6 py-10 max-w-7xl mx-auto;
+}
+
+.card_grid{
+  @apply grid md:grid-cols-3 sm:grid-cols-2 gap-5;
+}
+
+.card_grid-sm{
+  @apply grid sm:grid-cols-2 gap-5;
+}
+
+.no-result {
+  @apply text-black text-sm font-normal;
+}
 
 /* Fancy search bar */
 .search-bar {
@@ -276,11 +286,15 @@
   flex-grow: 1;
 }
 
-.blog-post {
+.blog-post { 
   max-width: 800px;
   margin: auto;
   padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,1.1);
 }
+
 .banner-image {
   width: 100%;
   border-radius: 10px;
